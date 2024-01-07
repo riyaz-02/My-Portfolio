@@ -67,6 +67,10 @@ body {
   color: #ffffff;
 }
 
+.dark-mode p{
+  color: #afafaf;
+}
+
 .dark-mode .navbar-brand .uil img {
   content: url(images/logo2.png);
 }
@@ -982,11 +986,7 @@ strong {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
   animation: fadeIn 0.8s ;
-  transition: opacity 0.5s ease-in-out;
 }
-.modal.hide {
-  opacity: 0;
- }
 
 .modal-content {
   background-color: #fefefe;
