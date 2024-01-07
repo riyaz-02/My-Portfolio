@@ -12,12 +12,44 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/unicons.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <script src="https://kit.fontawesome.com/27a24d1a74.js" crossorigin="anonymous"></script>
 
+
+  <script src="https://kit.fontawesome.com/27a24d1a74.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <!-- MAIN STYLE -->
   <link rel="stylesheet" href="css/tooplate-style.css">
+
+  <!--for style in project section-->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <style>
+    .path-0 {
+      animation: pathAnim-0 4s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes pathAnim-0 {
+      0% {
+        d: path("M 0,700 L 0,262 C 81.05462040535897,237.42219168670562 162.10924081071795,212.8443833734112 237,221 C 311.89075918928205,229.1556166265888 380.6176571624871,270.04465819306074 434,323 C 487.3823428375129,375.95534180693926 525.4201305393336,440.9769838543456 594,497 C 662.5798694606664,553.0230161456544 761.7018206801787,600.047406389557 830,596 C 898.2981793198213,591.952593610443 935.7725867399517,536.833390587427 994,513 C 1052.2274132600483,489.166609412573 1131.2078323600138,496.61903126073514 1209,535 C 1286.7921676399862,573.3809687392649 1363.3960838199932,642.6904843696325 1440,712 L 1440,700 L 0,700 Z");
+      }
+
+      25% {
+        d: path("M 0,700 L 0,262 C 80.89797320508416,267.1350051528684 161.7959464101683,272.2700103057369 217,290 C 272.2040535898317,307.7299896942631 301.71418756441085,338.0549639299209 374,349 C 446.28581243558915,359.9450360700791 561.3473033321883,351.51013397457916 633,383 C 704.6526966678117,414.48986602542084 732.8965991068362,485.90450017176227 791,496 C 849.1034008931638,506.09549982823773 937.0663002404672,454.8718653383718 1021,507 C 1104.9336997595328,559.1281346616282 1184.8381999312949,714.6080384747509 1254,766 C 1323.1618000687051,817.3919615252491 1381.5809000343525,764.6959807626246 1440,712 L 1440,700 L 0,700 Z");
+      }
+
+      50% {
+        d: path("M 0,700 L 0,262 C 49.7437306767434,281.98488491927174 99.4874613534868,301.96976983854347 176,308 C 252.5125386465132,314.03023016145653 355.7938852627963,306.1058055650979 432,342 C 508.2061147372037,377.8941944349021 557.3369975953281,457.6070079010649 616,477 C 674.6630024046719,496.3929920989351 742.8581243558916,455.46616283064236 819,465 C 895.1418756441084,474.53383716935764 979.2305049811062,534.5283407763656 1042,597 C 1104.7694950188938,659.4716592236344 1146.219855719684,724.4204740638955 1209,744 C 1271.780144280316,763.5795259361045 1355.890072140158,737.7897629680522 1440,712 L 1440,700 L 0,700 Z");
+      }
+
+      75% {
+        d: path("M 0,700 L 0,262 C 89.99793885262798,221.77327378907592 179.99587770525596,181.54654757815186 244,185 C 308.00412229474404,188.45345242184814 346.01442803160427,235.58708347646854 398,261 C 449.98557196839573,286.41291652353146 515.946410168327,290.1051185159739 588,332 C 660.053589831673,373.8948814840261 738.1999312950877,453.99244245963587 803,494 C 867.8000687049123,534.0075575403641 919.2538646513226,533.9251116454826 995,528 C 1070.7461353486774,522.0748883545174 1170.784610099622,510.30711095843355 1249,540 C 1327.215389900378,569.6928890415664 1383.607694950189,640.8464445207833 1440,712 L 1440,700 L 0,700 Z");
+      }
+
+      100% {
+        d: path("M 0,700 L 0,262 C 81.05462040535897,237.42219168670562 162.10924081071795,212.8443833734112 237,221 C 311.89075918928205,229.1556166265888 380.6176571624871,270.04465819306074 434,323 C 487.3823428375129,375.95534180693926 525.4201305393336,440.9769838543456 594,497 C 662.5798694606664,553.0230161456544 761.7018206801787,600.047406389557 830,596 C 898.2981793198213,591.952593610443 935.7725867399517,536.833390587427 994,513 C 1052.2274132600483,489.166609412573 1131.2078323600138,496.61903126073514 1209,535 C 1286.7921676399862,573.3809687392649 1363.3960838199932,642.6904843696325 1440,712 L 1440,700 L 0,700 Z");
+      }
+    }
+  </style>
 
   <!--
 
@@ -26,18 +58,28 @@
 
 <body>
   <!--Pre Loder-->
+  <!--Home Background-->
+  
+  <section class="header">
+    <div class="custom-shape-divider-top-1704480408">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+          opacity=".25" class="shape-fill"></path>
+        <path
+          d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+          opacity=".5" class="shape-fill"></path>
+        <path
+          d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+          class="shape-fill"></path>
+      </svg>
+    </div>
+  </section>
 
   <!-- MENU -->
   <nav class="navbar navbar-expand-sm navbar-light">
     <div class="container">
       <a class="navbar-brand" href="index.html"><img class='uil' src="images/logo-gif.gif"> Riyaz</a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
@@ -66,16 +108,22 @@
             <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
           </li>
         </ul>
-
-        <ul class="navbar-nav ml-lg-auto">
-          <div class="ml-lg-4">
-            <div class="color-mode d-lg-flex justify-content-center align-items-center">
-              <i class="color-mode-icon"></i>
-              <!--Color mode-->
-            </div>
-          </div>
-        </ul>
       </div>
+      <ul class="navbar-nav">
+        <div class="ml-lg-4">
+          <div class="color-mode">
+            <i class="color-mode-icon"></i>
+            <!--Color mode-->
+          </div>
+        </div>
+      </ul>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
   </nav>
 
@@ -121,25 +169,33 @@
   <!-- ABOUT ME -->
   <section class="about" id="about">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-11 text-center mx-auto col-12">
-          <div class="sectionhead">
-            <h1><i class="fa-solid fa-user-graduate"></i> About <span>Me</span></h1>
-          </div>
-          <div class="left-image">
-            <img src="images/about-me.png" class="img-fluid" alt="about me img"
-              style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
-          </div>
-          <div class="content">
-            <p> Campus Mantri & TCW @ GeeksforGeeks | Contingent Leader & Indigo Squad Member @Mood Indigo IIT Bombay 🤓
-              |
-              Ex-Internshala Student Partner 🎓 | Tech Enthusiast 🧑‍💻</p>
-            <p>I am a hardworking and ambitious individual with a great passion for The technology related field. I have
-              excellent communication skills, enabling me to effectively communicate with a wide range of people. In
-              between my Studies I have some leisure time which I want to use effectively by seeking a part-time
-              position in any technology and communication related field in which I can put into practice to Increase my
-              knowledge and experience.</p>
-          </div>
+      <div class="sectionhead">
+        <h1><i class="fa-solid fa-user-graduate"></i> About <span>Me</span></h1>
+      </div>
+      <div class="box flex-direction">
+        <div class="about-me">
+          <img src="./images/about-me.png">
+        </div>
+        <div class="about-details">
+          <p>Hello there! 👋 I'm Sk Riyaz, a passionate and ambitious Computer Science and Engineering student at JIS
+            College of Engineering, specializing in Frontend Web Development. My journey in the tech world is fueled by
+            a curiosity for cutting-edge technologies, a drive for creativity, and a commitment to continuous learning.
+          </p>
+
+          <h6>🚀 Tech Enthusiast:</h6>
+          <p>I've immersed myself in various programming languages such as Java, C/C++, JavaScript, and Python. My
+            proficiency extends to frontend technologies like React JS, enabling me to bring ideas to life through
+            intuitive and engaging user interfaces. Crafting aesthetically pleasing and functional websites is not just
+            a skill for me – it's a passion.</p>
+
+          <h6>🧠 Beyond the Screen:</h6>
+          <p>It's not all about lines of code for me. I'm fascinated by the possibilities that lie at the intersection
+            of Artificial Intelligence and Machine Learning. Exploring the realms of intelligent systems, I've ventured
+            into projects like the Intellicare ChatBot, integrating voice assistance and AI to connect users with expert
+            doctors seamlessly.</p>
+
+          <h6>Here's to coding, learning, and creating a tech-infused future! 🚀✨</h6>
+
         </div>
       </div>
     </div>
@@ -157,16 +213,16 @@
           <div class="col">
             <div class="bar">
               <div class="info">
-                <i class="fab fa-html5">
-                  <span>Java</span></i>
+                <i class="fab fa-html5"></i>
+                <span>Java</span>
                 <span>85%</span>
               </div>
               <div class="line html"></div>
             </div>
             <div class="bar">
               <div class="info">
-                <i class="fab fa-css3-alt">
-                  <span>C++</span></i>
+                <i class="fab fa-css3-alt"></i>
+                <span>C++</span>
                 <span>80%</span>
               </div>
               <div class="line css"></div>
@@ -174,8 +230,8 @@
 
             <div class="bar">
               <div class="info">
-                <i class="fab fa-js-square">
-                  <span>HTML/CSS</span></i>
+                <i class="fab fa-js-square"></i>
+                <span>HTML/CSS</span>
                 <span>90%</span>
               </div>
               <div class="line javascript"></div>
@@ -183,8 +239,8 @@
 
             <div class="bar">
               <div class="info">
-                <i class="fas fa-code">
-                  <span>C Language</span></i>
+                <i class="fas fa-code"></i>
+                <span>C Language</span>
                 <span>90%</span>
               </div>
               <div class="line jquery"></div>
@@ -192,8 +248,8 @@
 
             <div class="bar">
               <div class="info">
-                <i class="fab fa-google cloud">
-                  <span>Google Cloud Platform</span></i>
+                <i class="fab fa-google cloud"></i>
+                <span>Google Cloud Platform</span>
                 <span>60%</span>
               </div>
               <div class="line php"></div>
@@ -202,8 +258,8 @@
 
             <div class="bar">
               <div class="info">
-                <i class="fas fa-database">
-                  <span>Content Creation</span></i>
+                <i class="fas fa-database"></i>
+                <span>Content Creation</span>
                 <span>80%</span>
               </div>
               <div class="line mysql"></div>
@@ -213,8 +269,8 @@
           <div class="col">
             <div class="bar">
               <div class="info">
-                <i class="fab fa-react">
-                  <span>Graphics Designing</span></i>
+                <i class="fab fa-react"></i>
+                <span>Graphics Designing</span>
                 <span>75%</span>
               </div>
               <div class="line reactjs"></div>
@@ -222,8 +278,8 @@
 
             <div class="bar">
               <div class="info">
-                <i class="fab fa-python">
-                  <span>Python</span></i>
+                <i class="fab fa-python"></i>
+                <span>Python</span>
                 <span>60%</span>
               </div>
               <div class="line java"></div>
@@ -231,8 +287,8 @@
 
             <div class="bar">
               <div class="info">
-                <i class="fa-solid fa-film">
-                  <span>Video Editing</span></i>
+                <i class="fa-solid fa-film"></i>
+                <span>Video Editing</span>
                 <span>78%</span>
               </div>
               <div class="line css"></div>
@@ -241,8 +297,8 @@
 
             <div class="bar">
               <div class="info">
-                <i class="fab fa-aws">
-                  <span>AWS/Azure</span></i>
+                <i class="fab fa-aws"></i>
+                <span>AWS/Azure</span>
                 <span>60%</span>
               </div>
               <div class="line android"></div>
@@ -252,8 +308,8 @@
 
             <div class="bar">
               <div class="info">
-                <i class="fab fa-c">
-                  <span>Microsoft Office Suite</span></i>
+                <i class="fab fa-c"></i>
+                <span>Microsoft Office Suite</span>
                 <span>80%</span>
               </div>
               <div class="line cms"></div>
@@ -261,8 +317,8 @@
 
             <div class="bar">
               <div class="info">
-                <i class="fab fa-azure">
-                  <span>Project Management</span></i>
+                <i class="fab fa-azure"></i>
+                <span>Project Management</span>
                 <span>85%</span>
               </div>
               <div class="line firebase"></div>
@@ -281,8 +337,8 @@
       <div class="sectionhead">
         <h1><i class="fa-solid fa-graduation-cap"></i> </i> Education & <span>Trainings</span></h1>
       </div>
-      <div class="boxcontainer">
-        <div class="edu">
+      <div class="row">
+        <div class="col">
           <h2 class="heading-text">Education</h2>
           <div class="edu-list">
             <div class="edu-content">
@@ -308,9 +364,8 @@
               <p class="Organisation">Council for Indian School Certificate Examination (CISCE)</p>
             </div>
           </div>
-
         </div>
-        <div class="edu">
+        <div class="col">
           <h2 class="heading-text">Trainings</h2>
           <div class="edu-list">
             <div class="edu-content">
@@ -327,10 +382,10 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
+
 
 
   <!--Prjects Section-->
@@ -346,37 +401,70 @@
           my realm of creation!</p>
       </div>
 
-      <div class="box-container row">
-        <div class="box">
-          <img src="images/project/p1.png">
-          <p class="heading">Web Design 1</p>
-          <p>My Portfolio website using html, css and java script.</p>
-          <button>Read More</button>
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="project-image">
+                  <img src="images/project/p1.png" alt="">
+                </div>
+              </div>
+              <div class="project-content">
+                <h2>Portfolio Website</h2>
+                <p>I have built a portfolio website using HTML, CSS and JavaScript. I always keep on updating this
+                  project with my laest updates.</p>
+
+                <button class="button">View/Demo</button>
+                <button class="button">Details</button>
+              </div>
+            </div>
+            <!--Project 2-->
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="project-image">
+                  <img src="images/project/p2.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="project-content">
+                <h2>Medical ChatBot</h2>
+                <p>I have built a medical chatbot using Python which will help user to book doctor appointment only
+                  through voice assistance. Read more about the chatbot.</p>
+
+                <button class="button">View/Demo</button>
+                <button class="button">Details</button>
+              </div>
+            </div>
+
+            <!--Project 3-->
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="project-image">
+                  <img src="images/project/p3.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="project-content">
+                <h2>Project 3</h2>
+                <p>I have built a medical chatbot using Python which will help user to book doctor appointment only
+                  through voice assistance. Read more about the chatbot.</p>
+
+                <button class="button">View/Demo</button>
+                <button class="button">Details</button>
+              </div>
+            </div>
+
+
+          </div>
         </div>
-        <div class="box">
-          <img src="images/project/p2.jpg">
-          <p class="heading">Web Design 2</p>
-          <p>My Portfolio website using html, css and java script.</p>
-          <button>Read More</button>
-        </div>
-        <div class="box">
-          <img src="images/project/p3.jpg">
-          <p class="heading">App Design 1</p>
-          <p>My Portfolio website using html, css and java script.</p>
-          <button>Read More</button>
-        </div>
-        <div class="box">
-          <img src="images/project/p4.png">
-          <p class="heading">App Design</p>
-          <p>My Portfolio website using html, css and java script.</p>
-          <button>Read More</button>
-        </div>
-        <div class="box">
-          <img src="images/project/p5.jpg">
-          <p class="heading">App Design</p>
-          <p>My Portfolio website using html, css and java script.</p>
-          <button>Read More</button>
-        </div>
+
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
       </div>
 
     </div>
@@ -394,7 +482,7 @@
       </div>
       <div class="row">
         <div class="col-lg-6 m-15px-tb">
-          <div class="resume-box">
+          <div class="experience-box">
             <ul>
               <li>
                 <div class="icon">
@@ -427,7 +515,7 @@
           </div>
         </div>
         <div class="col-lg-6 m-15px-tb">
-          <div class="resume-box">
+          <div class="experience-box">
             <ul>
               <li>
                 <div class="icon">
@@ -470,6 +558,113 @@
         <div class="sectionhead">
           <h1><i class="fa-solid fa-medal"></i> Achievements & <span>Certifications</span></h1>
         </div>
+
+
+        <div class="box-container row">
+          <div class="box">
+            <img src="images/certificates/1_aicte_aiml.jpg">
+            <button class="read-more">Read More</button>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Certificate 1</h2>
+                    <p>Details about certificate 1...</p>
+                    <iframe src="https://drive.google.com/file/d" width="640" height="480"></iframe>
+                </div>
+            </div>
+          </div>
+
+
+
+          <div class="box">
+            <img src="images/certificates/2_Crowdsource.jpg">
+            <button class="read-more">Read More</button>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Certificate 1</h2>
+                    <p>Details about certificate 1...</p>
+                    <iframe src="https://drive.google.com/file/d" width="640" height="480"></iframe>
+                </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="images/certificates/3_ndli_ieee.jpg">
+            <button class="read-more">Read More</button>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Certificate 1</h2>
+                    <p>Details about certificate 1...</p>
+                    <iframe src="https://drive.google.com/file/d" width="640" height="480"></iframe>
+                </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="images/certificates/4_ey_hackathon.jpg">
+            <button class="read-more">Read More</button>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Certificate 1</h2>
+                    <p>Details about certificate 1...</p>
+                    <iframe src="https://drive.google.com/file/d" width="640" height="480"></iframe>
+                </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="images/certificates/5_gdsc_codefusion.jpg">
+            <button class="read-more">Read More</button>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Certificate 1</h2>
+                    <p>Details about certificate 1...</p>
+                    <iframe src="https://drive.google.com/file/d" width="640" height="480"></iframe>
+                </div>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/certificates/6_aws_aiml.jpg">
+            <button class="read-more">Read More</button>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Certificate 1</h2>
+                    <p>Details about certificate 1...</p>
+                    <iframe src="https://drive.google.com/file/d" width="640" height="480"></iframe>
+                </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="images/certificates/7_aws_cloud.jpg">
+            <button class="read-more">Read More</button>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Certificate 1</h2>
+                    <p>Details about certificate 1...</p>
+                    <iframe src="https://drive.google.com/file/d" width="640" height="480"></iframe>
+                </div>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/certificates/8_iitkgp_ca.jpg">
+            <button class="read-more">Read More</button>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Certificate 1</h2>
+                    <p>Details about certificate 1...</p>
+                    <iframe src="https://drive.google.com/file/d" width="640" height="480"></iframe>
+                </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -480,51 +675,34 @@
       <div class="sectionhead">
         <h1><i class="fa-solid fa-address-book"></i> Contact <span>Me</span></h1>
       </div>
-      <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern
-        websites</p>
-      <div class="boxcontainer">
-        <div class="box">
-          <h3 class="contactheading">Get In Touch</h3>
+      <div class="box flex-direction">
+        <div class="contact-image">
+          <img src="./images/contact_img.png">
+        </div>
+        <div class="form">
           <form class="contact-form">
             <input class="form-controls" type="text" placeholder="Your Name">
             <input class="form-controls" type="text" placeholder="Your Email">
             <input class="form-controls" type="text" placeholder="Your Phone">
             <textarea class="form-controls" placeholder="Write your message" name="message" id="" cols="30"
-              rows="5"></textarea>
-            <input class="form-btn btn common-btn" type="submit" value="Send Message">
+              rows="4"></textarea>
+            <div>
+              <input class="form-btn btn common-btn" type="submit" value="Send Message">
+            </div>
           </form>
         </div>
-        <div class="box">
-          <h3 class="contactheading">My Contact Details</h3>
-          <div class="details">
-            <h5 class="contact-heading">EMAIL</h5>
-            <p class="contact-text">dev.riyaz@gmail.com</p>
-          </div>
-          <div class="details">
-            <h5 class="contact-heading">PHONE</h5>
-            <p class="contact-text">+91 9832047335</p>
-          </div>
-          <div class="details">
-            <h5 class="contact-heading">ADDRESS</h5>
-            <p class="contact-text">Kolkata, West Bengal</p>
-            <p>India</p>
-          </div>
-          <div class="details">
-            <h5 class="contact-heading">SOCIAL LINKS</h5>
-            <div class="social">
+      </div>
+      <div class="social">
 
-              <a href="https://www.linkedin.com/in/skriyaz1/" class="fab fa-linkedin" target="_blank"></a>
-              <a href="https://github.com/git-riyaz" class="fab fa-github" target="_blank"></a>
-              <a href="mailto:skriyaz.dev@gmail.com" class="fas fa-envelope" target="_blank"></a>
-              <a href="https://www.instagram.com/invites/contact/?i=9k3uqrdzbujw&utm_content=lulju0d"
-                class="fab fa-instagram" target="_blank"></a>
-              <a href="https://www.facebook.com/sk.riyaz.562329/" class="fab fa-facebook" target="_blank"></a>
-              <a href="https://www.facebook.com/sk.riyaz.562329/" class="fab fa-quora" target="_blank"></a>
-              <a href="https://www.facebook.com/sk.riyaz.562329/" class="fab fa-medium" target="_blank"></a>
-              <a href="https://www.facebook.com/sk.riyaz.562329/" class="fab fa-location" target="_blank"></a>
-            </div>
-          </div>
-        </div>
+        <a href="https://www.linkedin.com/in/skriyaz1/" class="fab fa-linkedin" target="_blank"></a>
+        <a href="https://github.com/git-riyaz" class="fab fa-github" target="_blank"></a>
+        <a href="mailto:skriyaz.dev@gmail.com" class="fas fa-envelope" target="_blank"></a>
+        <a href="https://www.instagram.com/invites/contact/?i=9k3uqrdzbujw&utm_content=lulju0d" class="fab fa-instagram"
+          target="_blank"></a>
+        <a href="https://www.facebook.com/sk.riyaz.562329/" class="fab fa-facebook" target="_blank"></a>
+        <a href="https://www.facebook.com/sk.riyaz.562329/" class="fab fa-quora" target="_blank"></a>
+        <a href="https://www.facebook.com/sk.riyaz.562329/" class="fab fa-medium" target="_blank"></a>
+        <a href="https://www.facebook.com/sk.riyaz.562329/" class="fab fa-location" target="_blank"></a>
       </div>
     </div>
   </section>
@@ -533,58 +711,45 @@
   <!-- FOOTER -->
   <!-- footer section starts -->
   <section class="footer">
-    <div class="box-container">
-
-      <div class="box">
-        <h3>My Portfolio</h3>
-        <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br /> <br /> Please wait
-          for a while all major projects will be listed soon. Till then keep visiting. Connect with me over live chat!
-        </p>
-      </div>
-
-      <div class="box">
-        <h3>Quick Links</h3>
-        <a href="#home"><i class="fas fa-chevron-circle-right"></i> Home</a>
-        <a href="#about"><i class="fas fa-chevron-circle-right"></i> About</a>
-        <a href="#skills"><i class="fas fa-chevron-circle-right"></i> Skills</a>
-        <a href="#skills"><i class="fas fa-chevron-circle-right"></i> Education</a>
-        <a href="#projects"><i class="fas fa-chevron-circle-right"></i> Projects</a>
-        <a href="#experiences"><i class="fas fa-chevron-circle-right"></i> Experiences</a>
-        <a href="#certifications"><i class="fas fa-chevron-circle-right"></i> Certifications</a>
-        <a href="#contact"><i class="fas fa-chevron-circle-right"></i> Projects</a>
-      </div>
-
-      <div class="box">
-        <h3>Contact Info</h3>
-
-        <p> <i class="fas fa-envelope"></i>riyaz.dev@gmail.com</p>
-        <p> <i class="fas fa-map-marked-alt"></i>Kolkata</p>
-        <div class="share">
-
-          <a href="https://www.linkedin.com/in/skriyaz1/" class="fab fa-linkedin" target="_blank"></a>
-          <a href="https://github.com/git-riyaz" class="fab fa-github" target="_blank"></a>
-          <a href="mailto:skriyaz.dev@gmail.com" class="fas fa-envelope" target="_blank"></a>
-          <a href="https://www.instagram.com/invites/contact/?i=9k3uqrdzbujw&utm_content=lulju0d"
-            class="fab fa-instagram" target="_blank"></a>
-          <a href="https://www.facebook.com/sk.riyaz.562329/" class="fab fa-facebook" target="_blank"></a>
-
-        </div>
-      </div>
+    <div class="custom-shape-divider-bottom-1704482454">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+          opacity=".25" class="shape-fill"></path>
+        <path
+          d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+          opacity=".5" class="shape-fill"></path>
+        <path
+          d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-30,127.61-26.46,59-10,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+          class="shape-fill"></path>
+      </svg>
     </div>
-    <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a
-        href="https://www.linkedin.com/in/vanamali-matha-811035232"> Riyaz</a></h1>
+    <div class="credit">
+      <p>Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/skriyaz1"> Riyaz</a>
+      </p>
+    </div>
+
+
 
   </section>
-  <!-- footer section ends -->
 
+  <!-- footer section ends -->
+  
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
+  
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/Headroom.js"></script>
+  <!--Smooth Scroll-->
   <script src="js/jQuery.headroom.js"></script>
+  <script src="js/Headroom.js"></script>
   <script src="js/owl.carousel.min.js"></script>
-  <script src="js/smoothscroll.js"></script>
   <script src="js/custom.js"></script>
+  <!-- Swiper JS -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+<!-- Include Popup script -->
+<script src="js/popup.js"></script>
+
 
 </body>
 
