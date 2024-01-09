@@ -60,7 +60,7 @@
 
 .swiper-autoheight,
 .swiper-autoheight .swiper-slide {
-    height: auto
+    height: 100px;
 }
 
 .swiper-autoheight .swiper-wrapper {

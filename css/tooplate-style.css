@@ -50,6 +50,10 @@ body {
   border-bottom: 1px solid #1f1f1f;
 }
 
+.dark-mode .small-des{
+  color: #b9b8b8;
+}
+
 .dark-mode .small-text {
   background: #0d0c15;
   color: #ffffff;
@@ -68,7 +72,7 @@ body {
 }
 
 .dark-mode p{
-  color: #afafaf;
+  color: #b9b8b8;
 }
 
 .dark-mode .navbar-brand .uil img {
@@ -256,6 +260,10 @@ strong {
 .about-image style {
   will-change: transform;
   transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+}
+
+.about .about-text h6{
+  font-weight: 100;
 }
 
 .sectionhead span {
@@ -767,6 +775,18 @@ strong {
   text-align: center;
   margin-bottom: 10px;
 }
+.dark-mode #projects .project-content h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.dark-mode #projects .project-content p {
+  font-size: 14px;
+  color: #949494;
+  text-align: center;
+  margin-bottom: 10px;
+}
 
 #projects .button {
   border: none;
@@ -883,6 +903,12 @@ strong {
 .experience-box h5 {
   font-weight: 700;
   color: #1d1e1e;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.dark-mode .experience-box h5 {
+  font-weight: 700;
+  color: #ffffff;
   font-size: 16px;
   margin-bottom: 5px;
 }
