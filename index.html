@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/unicons.css">
 
+  <!--Sroll Animation-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
   <script src="https://kit.fontawesome.com/27a24d1a74.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -59,7 +61,7 @@
 <body>
   <!--Pre Loder-->
   <!--Home Background-->
-  
+
   <section class="header">
     <div class="custom-shape-divider-top-1704480408">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -77,7 +79,7 @@
   </section>
 
   <!-- MENU -->
-  <nav class="navbar navbar-expand-sm navbar-light">
+  <nav class="navbar navbar-expand-sm navbar-light" data-aos="fade-down">
     <div class="container">
       <a class="navbar-brand" href="index.html"><img class='uil' src="images/logo-gif.gif"> Riyaz</a>
 
@@ -85,7 +87,7 @@
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
             <a href="#home" class="nav-link"><span data-hover="Home">Home</span></a>
-          </li> <!--About Me-->
+          </li>
           <li class="nav-item">
             <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
           </li>
@@ -128,12 +130,12 @@
   </nav>
 
   <!-- HOME -->
-  <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="home">
+  <section class="home full-screen d-lg-flex justify-content-center align-items-center" id="home">
     <div class="container">
       <div class="row">
 
         <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
-          <div class="about-text">
+          <div class="home-text" data-aos="fade-right">
             <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
             <h1 class="animated animated-text">
               <span class="mr-2">Hey folks, I'm</span>
@@ -145,20 +147,21 @@
               </div>
             </h1>
 
-            <h6>Building a successful product is a challenge. I am highly energetic in user experience design, interfaces
+            <h6>Building a successful product is a challenge. I am highly energetic in user experience design,
+              interfaces
               and web development.</h6>
 
             <div class="custom-btn-group mt-4">
-              <a href="https://drive.google.com/file/d/1CMJiDvO4mXjnZypkLqT7h2XqGgcee_i-/view" class="btn mr-lg-2 custom-btn" target="_blank"><i class='uil uil-file-alt'></i>Resume</a>
+              <a href="https://drive.google.com/file/d/1CMJiDvO4mXjnZypkLqT7h2XqGgcee_i-/view"
+                class="btn mr-lg-2 custom-btn" target="_blank"><i class='uil uil-file-alt'></i>Resume</a>
               <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Contact</a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-5 col-md-12 col-12">
-          <div class="about-image png">
-            <img src="images/about-image.png" class="img-fluid" alt="about image"
-              style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+          <div class="home-image png" data-aos="fade-left">
+            <img src="images/about-image.png" class="img-fluid" alt="about image">
           </div>
         </div>
 
@@ -170,31 +173,34 @@
   <section class="about" id="about">
     <div class="container">
       <div class="sectionhead">
-        <h1><i class="fa-solid fa-user-graduate"></i> About <span>Me</span></h1>
+        <h1 data-aos="fade-up"><i class="fa-solid fa-user-graduate"></i> About <span>Me</span></h1>
       </div>
       <div class="box flex-direction">
-        <div class="about-me">
-          <img src="./images/about-me.png">
+        <div class="about-me" data-aos="fade-right">
+          <img src="images/about-me.png">
         </div>
         <div class="about-details">
-          <p>Hello there! 👋 I'm Sk Riyaz, a passionate and ambitious Computer Science and Engineering student at JIS
+          <p data-aos="fade-left">Hello there! 👋 I'm Sk Riyaz, a passionate and ambitious Computer Science and
+            Engineering student at JIS
             College of Engineering, specializing in Frontend Web Development. My journey in the tech world is fueled by
             a curiosity for cutting-edge technologies, a drive for creativity, and a commitment to continuous learning.
           </p>
 
-          <h6>🚀 Tech Enthusiast:</h6>
-          <p>I've immersed myself in various programming languages such as Java, C/C++, JavaScript, and Python. My
+          <h6 data-aos="fade-left">🚀 Tech Enthusiast:</h6>
+          <p data-aos="fade-left">I've immersed myself in various programming languages such as Java, C/C++,
+            JavaScript, and Python. My
             proficiency extends to frontend technologies like React JS, enabling me to bring ideas to life through
             intuitive and engaging user interfaces. Crafting aesthetically pleasing and functional websites is not just
             a skill for me – it's a passion.</p>
 
-          <h6>🧠 Beyond the Screen:</h6>
-          <p>It's not all about lines of code for me. I'm fascinated by the possibilities that lie at the intersection
+          <h6 data-aos="fade-left">🧠 Beyond the Screen:</h6>
+          <p data-aos="fade-left">It's not all about lines of code for me. I'm fascinated by the possibilities that lie
+            at the intersection
             of Artificial Intelligence and Machine Learning. Exploring the realms of intelligent systems, I've ventured
             into projects like the Intellicare ChatBot, integrating voice assistance and AI to connect users with expert
             doctors seamlessly.</p>
 
-          <h6>Here's to coding, learning, and creating a tech-infused future! 🚀✨</h6>
+          <h6 data-aos="fade-left">Here's to coding, learning, and creating a tech-infused future! 🚀✨</h6>
 
         </div>
       </div>
@@ -207,123 +213,100 @@
 
       <div class="col-lg-11 text-center mx-auto col-12">
         <div class="sectionhead">
-          <h1><i class="fa-solid fa-code"></i> Skills & <span>Abilities</span></h1>
+          <h1 data-aos="fade-up"><i class="fa-solid fa-code"></i> Skills & <span>Abilities</span></h1>
         </div>
         <div class="row">
           <div class="col">
-            <div class="bar">
+            <div class="bar" data-aos="fade-right">
               <div class="info">
                 <i class="fab fa-html5"></i>
                 <span>Java</span>
                 <span>85%</span>
               </div>
-              <div class="line html"></div>
+              <div class="line java"></div>
             </div>
-            <div class="bar">
+
+            <div class="bar" data-aos="fade-right">
               <div class="info">
                 <i class="fab fa-css3-alt"></i>
                 <span>C++</span>
                 <span>80%</span>
               </div>
-              <div class="line css"></div>
+              <div class="line cpp"></div>
             </div>
 
-            <div class="bar">
+            <div class="bar" data-aos="fade-right">
               <div class="info">
                 <i class="fab fa-js-square"></i>
                 <span>HTML/CSS</span>
                 <span>90%</span>
               </div>
-              <div class="line javascript"></div>
+              <div class="line html"></div>
             </div>
 
-            <div class="bar">
+            <div class="bar" data-aos="fade-right">
               <div class="info">
                 <i class="fas fa-code"></i>
                 <span>C Language</span>
                 <span>90%</span>
               </div>
-              <div class="line jquery"></div>
+              <div class="line c"></div>
             </div>
 
-            <div class="bar">
-              <div class="info">
-                <i class="fab fa-google cloud"></i>
-                <span>Google Cloud Platform</span>
-                <span>60%</span>
-              </div>
-              <div class="line php"></div>
-            </div>
-
-
-            <div class="bar">
+            <div class="bar" data-aos="fade-right">
               <div class="info">
                 <i class="fas fa-database"></i>
                 <span>Content Creation</span>
                 <span>80%</span>
               </div>
-              <div class="line mysql"></div>
+              <div class="line content"></div>
             </div>
           </div>
-
           <div class="col">
-            <div class="bar">
+            <div class="bar" data-aos="fade-left">
+              <div class="info">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+                <span>65%</span>
+              </div>
+              <div class="line python"></div>
+            </div>
+
+            <div class="bar" data-aos="fade-left">
               <div class="info">
                 <i class="fab fa-react"></i>
                 <span>Graphics Designing</span>
                 <span>75%</span>
               </div>
-              <div class="line reactjs"></div>
+              <div class="line graphics"></div>
             </div>
 
-            <div class="bar">
-              <div class="info">
-                <i class="fab fa-python"></i>
-                <span>Python</span>
-                <span>60%</span>
-              </div>
-              <div class="line java"></div>
-            </div>
-
-            <div class="bar">
-              <div class="info">
-                <i class="fa-solid fa-film"></i>
-                <span>Video Editing</span>
-                <span>78%</span>
-              </div>
-              <div class="line css"></div>
-            </div>
-
-
-            <div class="bar">
-              <div class="info">
-                <i class="fab fa-aws"></i>
-                <span>AWS/Azure</span>
-                <span>60%</span>
-              </div>
-              <div class="line android"></div>
-            </div>
-
-
-
-            <div class="bar">
+            <div class="bar" data-aos="fade-left">
               <div class="info">
                 <i class="fab fa-c"></i>
                 <span>Microsoft Office Suite</span>
                 <span>80%</span>
               </div>
-              <div class="line cms"></div>
+              <div class="line msoffice"></div>
             </div>
 
-            <div class="bar">
+            <div class="bar" data-aos="fade-left">
               <div class="info">
                 <i class="fab fa-azure"></i>
                 <span>Project Management</span>
                 <span>85%</span>
               </div>
-              <div class="line firebase"></div>
+              <div class="line project"></div>
             </div>
 
+            <div class="bar" data-aos="fade-right">
+              <div class="info">
+                <i class="fab fa-google cloud"></i>
+                <span>Google Cloud Platform</span>
+                <span>60%</span>
+              </div>
+              <div class="line gcp"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -334,13 +317,15 @@
   <!--Education Section Starts-->
   <section class="education" id="education">
     <div class="container">
-      <div class="sectionhead">
-        <h1><i class="fa-solid fa-graduation-cap"></i> </i> Education & <span>Trainings</span></h1>
+      <div class="col-lg-11 text-center mx-auto col-12">
+        <div class="sectionhead">
+          <h1 data-aos="fade-up"><i class="fa-solid fa-graduation-cap"></i> </i> Education & <span>Trainings</span></h1>
+        </div>
       </div>
       <div class="row">
-        <div class="col">
+        <div class="col-lg-6 m-15px-tb">
           <h2 class="heading-text">Education</h2>
-          <div class="edu-list">
+          <div class="edu-list" data-aos="fade-right">
             <div class="edu-content">
               <h2>JIS College of Engineering </h2>
               <h3>2022-2026</h3>
@@ -348,7 +333,7 @@
               <p class="Organisation">Maulana Abul Kalam Azad University of Technology (MAKAUT)</p>
             </div>
           </div>
-          <div class="edu-list">
+          <div class="edu-list" data-aos="fade-right">
             <div class="edu-content">
               <h2>H. S. Memorial School </h2>
               <h3>2021-2022</h3>
@@ -356,7 +341,7 @@
               <p class="Organisation">Council for Indian School Certificate Examination (CISCE)</p>
             </div>
           </div>
-          <div class="edu-list">
+          <div class="edu-list" data-aos="fade-right">
             <div class="edu-content">
               <h2>H. S. Memorial School </h2>
               <h3>2019-2020</h3>
@@ -365,16 +350,16 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-lg-6 m-15px-tb">
           <h2 class="heading-text">Trainings</h2>
-          <div class="edu-list">
+          <div class="edu-list" data-aos="fade-left">
             <div class="edu-content">
               <h2>Google Cloud Foundation</h2>
               <h3>2023-current</h3>
               <p>Foundation Training</p>
             </div>
           </div>
-          <div class="edu-list">
+          <div class="edu-list" data-aos="fade-left">
             <div class="edu-content">
               <h2>AWS AI ML</h2>
               <h3>2023</h3>
@@ -394,14 +379,15 @@
 
       <div class="col-lg-11 text-center mx-auto col-12">
         <div class="sectionhead">
-          <h1><i class="fa-solid fa-brain"> </i> <span> Projects</span></h1>
+          <h1 data-aos="fade-up"><i class="fa-solid fa-brain"> </i> <span> Projects</span></h1>
         </div>
-        <p>Discover my digital canvas! This project section unveils my creative odyssey, where ideas morph into reality.
+        <p data-aos="fade-up">Discover my digital canvas! This project section unveils my creative odyssey, where ideas
+          morph into reality.
           From code symphonies to design poetry, each project narrates a story of innovation and precision. Welcome to
           my realm of creation!</p>
       </div>
 
-      <div class="slide-container swiper">
+      <div class="slide-container swiper" data-aos="zoom-in">
         <div class="slide-content">
           <div class="card-wrapper swiper-wrapper">
             <div class="card swiper-slide">
@@ -416,7 +402,8 @@
                 <p>I have built a portfolio website using HTML, CSS and JavaScript. I always keep on updating this
                   project with my laest updates.</p>
 
-                <a href="https://riyaz-02.github.io/My-Portfolio/" target="_blank"><button class="button">View/Demo</button></a>
+                <a href="https://riyaz-02.github.io/My-Portfolio/" target="_blank"><button
+                    class="button">View/Demo</button></a>
                 <button class="button">Details</button>
               </div>
             </div>
@@ -450,9 +437,11 @@
 
               <div class="project-content">
                 <h2>Age Calculator</h2>
-                <p>Designed and developed a age calculator using Javascript and CSS. Which takes Date of Birth and shows current Age, month, and year.</p>
+                <p>Designed and developed a age calculator using Javascript and CSS. Which takes Date of Birth and shows
+                  current Age, month, and year.</p>
 
-                <a href="https://riyaz-02.github.io/age_calculator/" target="_blank"><button class="button">View/Demo</button></a>
+                <a href="https://riyaz-02.github.io/age_calculator/" target="_blank"><button
+                    class="button">View/Demo</button></a>
                 <button class="button">Details</button>
               </div>
             </div>
@@ -474,16 +463,17 @@
     <div class="container">
       <div class="col-lg-11 text-center mx-auto col-12">
         <div class="sectionhead">
-          <h1>Exprience<span>s</span></h1>
+          <h1 data-aos="fade-up">Exprience<span>s</span></h1>
         </div>
-        <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern
+        <p data-aos="fade-up">I design and develop services for customers of all sizes, specializing in creating
+          stylish, modern
           websites</p>
       </div>
       <div class="row">
         <div class="col-lg-6 m-15px-tb">
           <div class="experience-box">
             <ul>
-              <li>
+              <li data-aos="fade-right">
                 <div class="icon">
                   <i class="fas fa-briefcase"></i>
                 </div>
@@ -492,7 +482,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                   et dolore magna aliqua.</p>
               </li>
-              <li>
+              <li data-aos="fade-right">
                 <div class="icon">
                   <i class="fas fa-briefcase"></i>
                 </div>
@@ -501,7 +491,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                   et dolore magna aliqua.</p>
               </li>
-              <li>
+              <li data-aos="fade-right">
                 <div class="icon">
                   <i class="fas fa-briefcase"></i>
                 </div>
@@ -516,7 +506,7 @@
         <div class="col-lg-6 m-15px-tb">
           <div class="experience-box">
             <ul>
-              <li>
+              <li data-aos="fade-left">
                 <div class="icon">
                   <i class="fas fa-briefcase"></i>
                 </div>
@@ -525,7 +515,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                   et dolore magna aliqua.</p>
               </li>
-              <li>
+              <li data-aos="fade-left">
                 <div class="icon">
                   <i class="fas fa-briefcase"></i>
                 </div>
@@ -534,7 +524,7 @@
                 <p>As a Campus Ambassador, my sole responsibility is to set a successful and efficient connection
                   between IIT Guwahati and my college.</p>
               </li>
-              <li>
+              <li data-aos="fade-left">
                 <div class="icon">
                   <i class="fas fa-briefcase"></i>
                 </div>
@@ -555,104 +545,115 @@
     <div class="container">
       <div class="col-lg-11 text-center mx-auto col-12">
         <div class="sectionhead">
-          <h1><i class="fa-solid fa-medal"></i> Achievements & <span>Certifications</span></h1>
+          <h1 data-aos="fade-up"><i class="fa-solid fa-medal"></i> Achievements & <span>Certifications</span></h1>
         </div>
 
 
         <div class="box-container row">
           <div class="box">
-            <img src="images/certificates/1_aicte_aiml.jpg">
-            <button class="read-more" data-url="images/certificates/1_aicte_aiml.pdf" data-title="AWS Academy AI ML Virtual Internship - AICTE" data-description="Skills acquired: AWS Services, Machine Learning Concepts, Deep Learning, Amazon SageMaker, Model Deployment, AI/ML Project Lifecycle">Read More</button>
+            <img src="images/certificates/1_aicte_aiml.jpg" data-aos="zoom-in">
+            <button class="read-more" data-aos="zoom-in" data-url="images/certificates/1_aicte_aiml.pdf"
+              data-title="AWS Academy AI ML Virtual Internship - AICTE"
+              data-description="Skills acquired: AWS Services, Machine Learning Concepts, Deep Learning, Amazon SageMaker, Model Deployment, AI/ML Project Lifecycle">Read
+              More</button>
             <div class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <h2>Certificate 1</h2>
-                    <p>Details about certificate 1...</p>
-                    
-                </div>
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Certificate 1</h2>
+                <p>Details about certificate 1...</p>
+
+              </div>
             </div>
           </div>
 
-          <div class="box">
+          <div class="box" data-aos="zoom-in">
             <img src="images/certificates/1.1_Coursera_Python DSA.jpg">
-            <button class="read-more" data-url="images/certificates/1.1_Coursera_Python DSA.pdf" data-title="Certificate 1" data-description="Details of certificate 1...">Read More</button>
+            <button class="read-more" data-url="images/certificates/1.1_Coursera_Python DSA.pdf"
+              data-title="Certificate 1" data-description="Details of certificate 1...">Read More</button>
             <div class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <h2>Certificate 2</h2>
-                    <p>Details of certificate 2...</p>
-                    
-                </div>
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Certificate 2</h2>
+                <p>Details of certificate 2...</p>
+
+              </div>
             </div>
           </div>
 
 
 
-          <div class="box">
+          <div class="box" data-aos="zoom-in">
             <img src="images/certificates/2_Crowdsource.jpg">
-            <button class="read-more" data-url="images/certificates/2_crowdsource.pdf" data-title="Certificate 1" data-description="Details of certificate 1...">Read More</button>
+            <button class="read-more" data-url="images/certificates/2_crowdsource.pdf" data-title="Certificate 1"
+              data-description="Details of certificate 1...">Read More</button>
             <div class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                </div>
+              <div class="modal-content">
+                <span class="close">&times;</span>
+              </div>
             </div>
           </div>
 
-          <div class="box">
+          <div class="box" data-aos="zoom-in">
             <img src="images/certificates/3_ndli_ieee.jpg">
-            <button class="read-more" data-url="images/certificates/3_ndli_ieee.pdf" data-title="Certificate 1" data-description="Details of certificate 1...">Read More</button>
+            <button class="read-more" data-url="images/certificates/3_ndli_ieee.pdf" data-title="Certificate 1"
+              data-description="Details of certificate 1...">Read More</button>
             <div class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                </div>
+              <div class="modal-content">
+                <span class="close">&times;</span>
+              </div>
             </div>
           </div>
 
-          <div class="box">
+          <div class="box" data-aos="zoom-in">
             <img src="images/certificates/4_ey_hackathon.jpg">
-            <button class="read-more" data-url="images/certificates/4_ey_hackathon.pdf" data-title="Certificate 1" data-description="Details of certificate 1...">Read More</button>
+            <button class="read-more" data-url="images/certificates/4_ey_hackathon.pdf" data-title="Certificate 1"
+              data-description="Details of certificate 1...">Read More</button>
             <div class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                </div>
+              <div class="modal-content">
+                <span class="close">&times;</span>
+              </div>
             </div>
           </div>
 
-          <div class="box">
+          <div class="box" data-aos="zoom-in">
             <img src="images/certificates/5_gdsc_codefusion.jpg">
-            <button class="read-more" data-url="images/certificates/5_gdsc_codefusion.pdf" data-title="Certificate 1" data-description="Details of certificate 1...">Read More</button>
+            <button class="read-more" data-url="images/certificates/5_gdsc_codefusion.pdf" data-title="Certificate 1"
+              data-description="Details of certificate 1...">Read More</button>
             <div class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                </div>
+              <div class="modal-content">
+                <span class="close">&times;</span>
+              </div>
             </div>
           </div>
-          <div class="box">
+          <div class="box" data-aos="zoom-in">
             <img src="images/certificates/6_aws_aiml.jpg">
-            <button class="read-more" data-url="images/certificates/6_aws_aiml.pdf" data-title="Certificate 1" data-description="Details of certificate 1...">Read More</button>
+            <button class="read-more" data-url="images/certificates/6_aws_aiml.pdf" data-title="Certificate 1"
+              data-description="Details of certificate 1...">Read More</button>
             <div class="modal">
-                <div class="modal-content">
-                  <span class="close">&times;</span>
-                </div>
+              <div class="modal-content">
+                <span class="close">&times;</span>
+              </div>
             </div>
           </div>
 
-          <div class="box">
+          <div class="box" data-aos="zoom-in">
             <img src="images/certificates/7_aws_cloud.jpg">
-            <button class="read-more" data-url="images/certificates/7_aws_cloud.pdf" data-title="Certificate 1" data-description="Details of certificate 1...">Read More</button>
+            <button class="read-more" data-url="images/certificates/7_aws_cloud.pdf" data-title="Certificate 1"
+              data-description="Details of certificate 1...">Read More</button>
             <div class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                </div>
+              <div class="modal-content">
+                <span class="close">&times;</span>
+              </div>
             </div>
           </div>
-          <div class="box">
+          <div class="box" data-aos="zoom-in">
             <img src="images/certificates/8_iitkgp_ca.jpg">
-            <button class="read-more" data-url="images/certificates/8_iitkgp_ca.pdf" data-title="Certificate 1" data-description="Details of certificate 1...">Read More</button>
+            <button class="read-more" data-url="images/certificates/8_iitkgp_ca.pdf" data-title="Certificate 1"
+              data-description="Details of certificate 1...">Read More</button>
             <div class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                </div>
+              <div class="modal-content">
+                <span class="close">&times;</span>
+              </div>
             </div>
           </div>
         </div>
@@ -664,57 +665,47 @@
   <section class="contact" id="contact">
     <div class="container">
       <div class="sectionhead">
-        <h1><i class="fa-solid fa-address-book"></i> Contact <span>Me</span></h1>
+        <h1 data-aos="fade-up"><i class="fa-solid fa-address-book"></i> Contact <span>Me</span></h1>
       </div>
       <div class="box flex-direction">
-        <div class="contact-image">
+        <div class="contact-image" data-aos="fade-right">
           <img src="./images/contact_img.png">
         </div>
         <div class="form">
-          <form class="contact-form">
-            <input class="form-controls" type="text" placeholder="Your Name">
-            <input class="form-controls" type="text" placeholder="Your Email">
-            <input class="form-controls" type="text" placeholder="Your Phone">
-            <textarea class="form-controls" placeholder="Write your message" name="message" id="" cols="30"
-              rows="4"></textarea>
+          <form class="contact-form" onsubmit="sendEmail(); reset(); return false;">
+            <input class="form-controls" id="name" type="text" placeholder="Your Name" data-aos="fade-left">
+            <input class="form-controls" id="email" type="text" placeholder="Your Email" data-aos="fade-left">
+            <input class="form-controls" id="phone" type="text" placeholder="Your Phone" data-aos="fade-left">
+            <textarea class="form-controls" id="message" placeholder="Write your message" name="message" id="" cols="30" rows="4"
+              data-aos="fade-left"></textarea>
             <div>
-              <input class="form-btn btn common-btn" type="submit" value="Send Message">
+              <input class="form-btn btn common-btn" type="submit" value="Send Message" data-aos="zoom-in">
             </div>
           </form>
         </div>
       </div>
-      <div class="social">
-
-        <a href="https://www.linkedin.com/in/skriyaz1/" class="fab fa-linkedin" target="_blank"></a>
-        <a href="https://github.com/git-riyaz" class="fab fa-github" target="_blank"></a>
-        <a href="mailto:skriyaz.dev@gmail.com" class="fas fa-envelope" target="_blank"></a>
-        <a href="https://www.instagram.com/invites/contact/?i=9k3uqrdzbujw&utm_content=lulju0d" class="fab fa-instagram"
-          target="_blank"></a>
-        <a href="https://www.facebook.com/sk.riyaz.562329/" class="fab fa-facebook" target="_blank"></a>
-        <a href="https://www.facebook.com/sk.riyaz.562329/" class="fab fa-quora" target="_blank"></a>
-        <a href="https://www.facebook.com/sk.riyaz.562329/" class="fab fa-medium" target="_blank"></a>
-        <a href="https://www.facebook.com/sk.riyaz.562329/" class="fab fa-location" target="_blank"></a>
-      </div>
-    </div>
   </section>
 
 
   <!-- FOOTER -->
   <!-- footer section starts -->
   <section class="footer">
-    <div class="custom-shape-divider-bottom-1704482454">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path
-          d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-          opacity=".25" class="shape-fill"></path>
-        <path
-          d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-          opacity=".5" class="shape-fill"></path>
-        <path
-          d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-30,127.61-26.46,59-10,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-          class="shape-fill"></path>
-      </svg>
+    <div class="social">
+
+      <a href="https://www.linkedin.com/in/skriyaz1/" class="fab fa-linkedin" target="_blank"></a>
+      <a href="https://github.com/git-riyaz" class="fab fa-github" target="_blank"></a>
+      <a href="mailto:skriyaz.dev@gmail.com" class="fas fa-envelope" target="_blank"></a>
+      <a href="https://www.instagram.com/invites/contact/?i=9k3uqrdzbujw&utm_content=lulju0d" class="fab fa-instagram"
+        target="_blank"></a>
+      <a href="https://www.facebook.com/sk.riyaz.562329/" class="fab fa-facebook" target="_blank"></a>
+      <a href="https://www.facebook.com/sk.riyaz.562329/" class="fab fa-quora" target="_blank"></a>
+      <a href="https://www.facebook.com/sk.riyaz.562329/" class="fab fa-medium" target="_blank"></a>
+      <a href="https://www.facebook.com/sk.riyaz.562329/" class="fab fa-location" target="_blank"></a>
     </div>
+    <div class="note">
+      <p>Coding, learning, evolving. Join me on this journey of continuous improvement</p>
+    </div>
+  </div>
     <div class="credit">
       <p>Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/skriyaz1"> Riyaz</a>
       </p>
@@ -725,21 +716,38 @@
   </section>
 
   <!-- footer section ends -->
-  
+
   <script src="js/jquery-3.3.1.min.js"></script>
-  
+
   <script src="js/bootstrap.min.js"></script>
   <!--Smooth Scroll-->
   <script src="js/jQuery.headroom.js"></script>
   <script src="js/Headroom.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/custom.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 700, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: true, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+    });
+
+  </script>
   <!-- Swiper JS -->
   <script src="js/swiper-bundle.min.js"></script>
   <!-- JavaScript -->
   <script src="js/script.js"></script>
-<!-- Include Popup script -->
-<script src="js/popup.js"></script>
+  <!-- Include Popup script -->
+  <script src="js/popup.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="js/message.js"></script>
+
 
 
 </body>

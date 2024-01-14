@@ -3,7 +3,8 @@
 body {
   font-family: "Maven Pro", sans-serif;
   padding-top: 70px;
-  background-color: transparent;
+  background-color:transparent;
+  overflow-x: hidden;
 }
 
 
@@ -87,7 +88,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  overflow: hidden;
+  overflow:hidden;
   line-height: 0;
 }
 
@@ -141,7 +142,7 @@ a:hover {
   margin-right: 5px;
 }
 
-.about-text p {
+.home-text p {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.5;
@@ -249,7 +250,7 @@ strong {
   animation-delay: 4s;
 }
 
-.about-image img {
+.home-image img {
   width: 70%;
   margin-left: 6rem;
   border-radius: 50%;
@@ -257,18 +258,25 @@ strong {
   cursor: pointer;
 }
 
-.about-image style {
+.home-image style {
   will-change: transform;
   transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
 }
 
-.about .about-text h6{
+.home .home-text h6{
   font-weight: 100;
 }
 
 .sectionhead span {
   color: #ffc200;
   text-align: center;
+}
+#home{
+  overflow: hidden;
+}
+
+#about{
+  overflow: hidden;
 }
 
 #about .content p {
@@ -310,14 +318,6 @@ strong {
   }
 }
 
-.left-image img {
-  width: 20%;
-  margin: auto;
-  display: block;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-}
 
 .content p {
   position: relative;
@@ -444,6 +444,7 @@ strong {
 /*----------ABOUT ME--------------------------*/
 #contact {
   justify-content: center;
+  overflow: hidden;
 }
 
 
@@ -482,11 +483,14 @@ strong {
 }
 
 #about .about-me img{
-  width: 200;
-  height: 150px;
+  width: 400;
+  height: 550px;
 }
 
 /* skills section starts */
+#skills{
+  overflow: hidden;
+}
 .skills {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -564,63 +568,54 @@ strong {
   border-radius: 4px;
 }
 
-.skills .container .col .bar .html:before {
+.skills .container .col .bar .java:before {
   width: 85%;
   background: #ffc200;
 }
 
-.skills .container .col .bar .css:before {
-  width: 90%;
-  background: #ffc200;
-}
 
-.skills .container .col .bar .javascript:before {
+.skills .container .col .bar .cpp:before {
   width: 80%;
   background: #ffc200;
 }
 
-.skills .container .col .bar .jquery:before {
+.skills .container .col .bar .html:before {
   width: 90%;
   background: #ffc200;
 }
 
-.skills .container .col .bar .php:before {
-  width: 60%;
+.skills .container .col .bar .c:before {
+  width: 90%;
   background: #ffc200;
 }
 
-.skills .container .col .bar .mysql:before {
+.skills .container .col .bar .content:before {
   width: 80%;
-  background: #ffc200;
-}
-
-.skills .container .col .bar .reactjs:before {
-  width: 75%;
-  background: #ffc200;
-}
-
-.skills .container .col .bar .java:before {
-  width: 60%;
   background: #ffc200;
 }
 
 .skills .container .col .bar .python:before {
+  width: 65%;
+  background: #ffc200;
+}
+
+.skills .container .col .bar .graphics:before {
+  width: 75%;
+  background: #ffc200;
+}
+
+.skills .container .col .bar .msoffice:before {
   width: 78%;
   background: #ffc200;
 }
 
-.skills .container .col .bar .android:before {
-  width: 60%;
-  background: #ffc200;
-}
-
-.skills .container .col .bar .cms:before {
-  width: 80%;
-  background: #ffc200;
-}
-
-.skills .container .col .bar .firebase:before {
+.skills .container .col .bar .project:before {
   width: 85%;
+  background: #ffc200;
+}
+
+.skills .container .col .bar .gcp:before {
+  width: 60%;
   background: #ffc200;
 }
 
@@ -628,6 +623,9 @@ strong {
 
 
 /*Education Section*/
+#education{
+  overflow: hidden;
+}
 
 .bg-lightgrey {
   background-color: #1a1a1a;
@@ -693,6 +691,9 @@ strong {
   justify-content: center;
   background-color: #000000;
 }*/
+#projects{
+  overflow: hidden;
+}
 #projects .slide-container {
   max-width: 100%;
   width: 100%;
@@ -840,6 +841,7 @@ strong {
 
 #experiences {
   padding: 20px;
+  overflow: hidden;
 }
 
 .experience-box {
@@ -930,6 +932,7 @@ strong {
 /*Achievements and Certifications*/
 #achievements {
   padding: 20px;
+  overflow: hidden;
 }
 
 #achievements .box img {
@@ -1075,7 +1078,7 @@ strong {
 /*--------------Contact sction---------------*/
 #contact {
   justify-content: center;
-
+  overflow: hidden;
 }
 
 /*#contact .containerbox {
@@ -1104,7 +1107,7 @@ strong {
   justify-content: center;
   display: flex;
   flex-wrap: nowrap;
-  gap:
+  gap: 10%;
 }
 
 /*!important*/
@@ -1114,9 +1117,8 @@ strong {
 
 #contact .contact-form {
   display: inline-block;
-  text-align: center;
   width: 500px;
-  height: 400px;
+  height: 320px;
 }
 
 #contact .contact-image {
@@ -1130,7 +1132,9 @@ strong {
 }
 
 #contact .form {
-
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #contact input,
@@ -1162,37 +1166,76 @@ textarea:focus {
   text-transform: uppercase;
   transition: transform 80ms ease-in;
   cursor: pointer;
-  width: 50%;
+  margin: auto;
 }
 
 #contact button:hover {
   opacity: 0.7;
 }
 
-.contact .social {
+
+/* footer section starts */
+#footer .line{
+  width: 100%;
+  display:inline-block;
+  color: #ffffff;
+  box-shadow: linear-gradient(to bottom, rgb(0, 128, 255), transparent 50%);
+}
+.footer {
+  position: relative;
+  min-height: auto;
+  padding-top: auto;
+  background: #000000;
+  justify-content: end;
+}
+
+.footer .social {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 30px;
+  padding-bottom: 20px;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+.footer .note{
+  font-family: "Lucida Handwriting";
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+.footer .note p{
+  margin-bottom: 0;
+  margin-top: 15px;
 }
 
-.contact .social a {
+.footer .social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white; /* Makes the icons white */
   height: 50px;
   width: 50px;
   padding: 8px;
+  margin-top: 25px;
   text-align: center;
   border-radius: 50px;
   font-size: 30px;
+  transition: transform 0.2s ease-in-out;
+}
+.social a:hover {
+  transform: scale(1.2); /* Zoom in on hover */
 }
 
-/* footer section starts */
-.footer {
-  position: relative;
-  margin-top: 50px;
-  min-height: auto;
-  padding-top: auto;
-  background: transparent;
-  justify-content: end;
+.dark-mode .footer{
+  background: #ffffff;
+}
+.dark-mode .note,
+.dark-mode .social a{
+  color: #000000;
 }
 
 .footer .credit {
@@ -1202,17 +1245,25 @@ textarea:focus {
   align-self: center;
   font-size: 15px;
   font-weight: 600;
-  color: #000000;
 
 }
 .footer .credit p{
   margin: 0;
   padding: 5px 0;
+  color: #ffffff;
 }
 
 .footer .credit a {
-  color: #000000;
+  color: #ffffff;
   font-weight: 600;
+}
+
+.dark-mode .footer .credit p,
+.dark-mode .footer .note p{
+  color: #000000;
+}
+.dark-mode .footer .credit a{
+  color: #000000;
 }
 
 .footer .fa {
@@ -1278,8 +1329,8 @@ textarea:focus {
     height: 900px;
     transform: rotateY(180deg);
   }
-  .about{
-    padding-top: 0;
+  #home{
+    padding-top: 5px;
   }
 
   .color-mode-icon {
@@ -1298,7 +1349,7 @@ textarea:focus {
   }*/
 
 
-  .about-image {
+  #home .home-image {
     margin-top: auto;
   }
 
@@ -1306,7 +1357,11 @@ textarea:focus {
     flex-direction: column;
   }
 
-  .about {
+  #home {
+    justify-content: center;
+    overflow: hidden;
+  }
+  #about{
     justify-content: center;
   }
 
@@ -1331,8 +1386,11 @@ textarea:focus {
 
   #about .about-me img {
     justify-self: center;
-    width: 250px;
-    height: 250px;
+    width: 300px; 
+    height: 337px; 
+    object-fit: cover; 
+    object-position: 100% 0;
+    padding-bottom: 20px;
   }
 
   .custom-shape-divider-bottom-1704482454 {
@@ -1425,7 +1483,7 @@ textarea:focus {
     align-self: center;
   }
 
-  .contact {
+  #contact {
     justify-content: center;
   }
 
@@ -1437,7 +1495,7 @@ textarea:focus {
     gap: 0;
   }
 
-  .contact .flex-direction {
+  #contact .flex-direction {
     flex-direction: column;
   }
 
@@ -1470,15 +1528,16 @@ textarea:focus {
     font-size: 2em;
   }
 
-  .about-image {
+  .home-image img{
     align-items: center;
   }
 
-  .about-image .img-fluid {
+  #home .home-image .img-fluid {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    margin-top: 8%;
+    width: 80%;
   }
 
   .animated-item {
