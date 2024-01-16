@@ -3,7 +3,7 @@
 body {
   font-family: "Maven Pro", sans-serif;
   padding-top: 70px;
-  background-color:transparent;
+  background-color:#fff7f7;
   overflow-x: hidden;
 }
 
@@ -1175,11 +1175,8 @@ textarea:focus {
 
 
 /* footer section starts */
-#footer .line{
-  width: 100%;
-  display:inline-block;
-  color: #ffffff;
-  box-shadow: linear-gradient(to bottom, rgb(0, 128, 255), transparent 50%);
+#footer{
+  overflow: hidden;
 }
 .footer {
   position: relative;
@@ -1233,7 +1230,7 @@ textarea:focus {
 .dark-mode .footer{
   background: #ffffff;
 }
-.dark-mode .note,
+.dark-mode .note p,
 .dark-mode .social a{
   color: #000000;
 }
