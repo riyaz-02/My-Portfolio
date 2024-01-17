@@ -3,7 +3,7 @@ function sendEmail(){
         Host : "smtp.elasticemail.com",
         Username : "riyaz.pandas@gmail.com",
         Password : "EA4AC11A84D218B239367D88A4B7B19FF6CA",
-        To : 'skriyaz.dev@gmail.com',
+        To : 'riyaz.pandas@gmail.com',
         From : 'riyaz.pandas@gmail.com',
         Subject : "New Entry to Your Portfolio",
         Body : "Name: " + document.getElementById("name").value
