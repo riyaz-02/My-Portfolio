@@ -1542,8 +1542,16 @@ textarea:focus {
     width: 80%;
   }
 
+  .intro{
+    text-align: justify;
+  }
+
+  .animated .mr-2,
+  .animated .name-riyaz{
+    font-size: 26px;
+  }
   .animated-item {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .navbar-collapse {
@@ -1560,9 +1568,6 @@ textarea:focus {
     min-width: 200px;
   }
 
-  .animated-item {
-    font-size: 30px;
-  }
 
   .custom-btn-group {
     text-align: center;
