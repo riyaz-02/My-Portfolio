@@ -3,7 +3,7 @@
 body {
   font-family: "Maven Pro", sans-serif;
   padding-top: 70px;
-  background-color:#fff7f7;
+  background: linear-gradient(to left, #afffd8, #b4ff83);
   overflow-x: hidden;
 }
 
