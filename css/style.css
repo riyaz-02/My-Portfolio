@@ -1007,6 +1007,10 @@ strong {
   color: rgb(0, 0, 0);
   font-weight: 400;
 }
+.dark-mode #achievements .box h2 {
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+}
 
 #achievements .box p:nth-child(2) {
   font-family: calibri;
@@ -1040,8 +1044,9 @@ strong {
   justify-content: center;
 }
 
+
 .modal-content {
-  background-color: #fefefe;
+  background-color: #ffffff;
   margin: auto;
   margin-top: 50px;
   margin-bottom: auto;
