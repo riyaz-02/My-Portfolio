@@ -3,10 +3,18 @@
 body {
   font-family: "Maven Pro", sans-serif;
   padding-top: 70px;
-  background: linear-gradient(to right, #c8fce3, #c3ff9b);
+  background: transparent;
   overflow-x: hidden;
 }
-
+.home #particles-js{
+  position: absolute;
+  top: 0;left: 0;
+  height: 100%;
+  width: 100%;
+}
+.home #particlesdark-js{
+  width: 0;
+}
 
 /*---------color mode------------*/
 .color-mode {
@@ -79,31 +87,17 @@ body {
 .dark-mode .navbar-brand .uil img {
   content: url(images/logo2.png);
 }
-
-/*---------------------------------------------*/
-
-.custom-shape-divider-top-1704480408 {
+.dark-mode .home #particlesdark-js{
   position: absolute;
-  display: block;
   top: 0;
   left: 0;
+  height: 100%;
   width: 100%;
-  overflow:hidden;
-  line-height: 0;
 }
-
-.custom-shape-divider-top-1704480408 svg {
-  position: relative;
-  display: block;
-  width: calc(300% + 1.3px);
-  height: 500px;
-  transform: rotateY(180deg);
+.dark-mode .home #particles-js{
+  
 }
-
-.custom-shape-divider-top-1704480408 .shape-fill {
-  fill: #C2E800;
-}
-
+/*---------------------------------------------*/
 
 .full-screen {
   padding: 8rem 0;
