@@ -12,7 +12,13 @@ body {
   height: 100%;
   width: 100%;
 }
-#particlesdark-js{
+.dark-mode #particles-js { 
+  position: absolute;
+  top: 0;left: 0;
+  height: 100%;
+  width: 100%;
+}
+/*#particlesdark-js{
   width: 0;
 }
 
@@ -24,7 +30,7 @@ body {
 }
 .dark-mode #particles-js{
   width: 0;
-}
+}*/
 
 
 /*---------color mode------------*/
