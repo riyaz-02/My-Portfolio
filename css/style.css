@@ -6,6 +6,7 @@ body {
   background: transparent;
   overflow-x: hidden;
 }
+
 #particles-js{
   position: absolute;
   top: 0;left: 0;
