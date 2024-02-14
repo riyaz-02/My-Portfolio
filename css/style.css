@@ -6,17 +6,20 @@ body {
   background: transparent;
   overflow-x: hidden;
 }
-.home #particles-js{
+#particles-js{
   position: absolute;
   top: 0;left: 0;
   height: 100%;
   width: 100%;
 }
-.home #particlesdark-js{
+#particlesdark-js{
   width: 0;
 }
-.dark-mode #particlesdark-js{
-  position: relative;
+
+.dark-mode #particlesdark-js { 
+  position: absolute;
+  top: 0;left: 0;
+  height: 100%;
   width: 100%;
 }
 .dark-mode #particles-js{
@@ -1486,7 +1489,6 @@ textarea:focus {
   #contact .box {
     display: grid;
     align-content: center;
-    justify-content: center;
     display: 100%;
     gap: 0;
   }
