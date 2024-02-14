@@ -15,6 +15,14 @@ body {
 .home #particlesdark-js{
   width: 0;
 }
+.dark-mode #particlesdark-js{
+  position: relative;
+  width: 100%;
+}
+.dark-mode #particles-js{
+  width: 0;
+}
+
 
 /*---------color mode------------*/
 .color-mode {
@@ -87,16 +95,8 @@ body {
 .dark-mode .navbar-brand .uil img {
   content: url(images/logo2.png);
 }
-.dark-mode .home #particlesdark-js{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-.dark-mode .home #particles-js{
-  
-}
+
+
 /*---------------------------------------------*/
 
 .full-screen {
