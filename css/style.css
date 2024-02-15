@@ -1157,13 +1157,36 @@ textarea {
   font-size: 0.8rem;
   text-align: center;
 }
-
-#contact input:focus,
-textarea:focus {
-  outline: 1px solid teal;
+.dark-mode #contact input,
+textarea {
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  padding: 6px 15px;
+  margin: 6px 0;
+  width: 70%;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
+
+
 #contact .form-btn {
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  background-color: #ffc200;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+  margin: auto;
+}
+.dark-mode #contact .form-btn {
   border-radius: 20px;
   border: 1px solid #ffffff;
   background-color: #ffc200;
@@ -1277,27 +1300,6 @@ textarea:focus {
   margin: 5px;
   font-size: 15px;
   animation: pound .35s infinite alternate;
-}
-
-.custom-shape-divider-bottom-1704482454 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1704482454 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 99px;
-}
-
-.custom-shape-divider-bottom-1704482454 .shape-fill {
-  fill: #C2E800;
 }
 
 /*@-webkit-keyframes pound {
