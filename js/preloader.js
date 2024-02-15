@@ -28,6 +28,8 @@ particleground(document.getElementById('particles-foreground'), {
   proximity: 250, // How close two dots need to be before they join
   parallaxMultiplier: 10, // Lower the number is more extreme parallax
   particleRadius: 4, // Dot size
+  canvasWidth: '100%',
+  canvasHeight: '100%'
 });
 
 particleground(document.getElementById('particles-background'), {
@@ -42,7 +44,11 @@ particleground(document.getElementById('particles-background'), {
   proximity: 20, // How close two dots need to be before they join
   parallaxMultiplier: 20, // Lower the number is more extreme parallax
   particleRadius: 2, // Dot size
+  canvasWidth: '100%',
+  canvasHeight: '100%'
 });
+
+
 // Function to animate the opacity of the loader element
 function animateLoader(loader, startTime) {
   const currentTime = performance.now();
