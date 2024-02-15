@@ -63,9 +63,10 @@ function animateLoader(loader, startTime) {
     setTimeout(() => {
       loader.remove();
       document.body.style.overflow = 'auto'; // Remove the overflow rule from the body element
-    }, 1000); // Wait for 500 milliseconds before removing the loader
+    }, 500); // Wait for 500 milliseconds before removing the loader
   }
 }
+
 
 // Call the animateLoader function when the page has finished loading
 window.onload = function () {
@@ -74,3 +75,4 @@ window.onload = function () {
     animateLoader(loader, performance.now()); // Start animating the loader
   }
 };
+
