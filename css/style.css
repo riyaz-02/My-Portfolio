@@ -277,6 +277,8 @@ strong {
 }
 #home{
   overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 #about{
@@ -286,6 +288,203 @@ strong {
 #about .content p {
   color: #4b4b4b;
 }
+
+
+/*Home cards===============*/
+.home-cards{
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.home-cards, .home-cards:before, .home-cards:after {
+  box-sizing: inherit;
+}
+
+.home-cards .text-center {
+  text-align: center;
+}
+
+.home-cards .color-white {
+  color: #fff;
+}
+
+.home-cards .box-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem 15rem;
+  width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .home-cards .box-container {
+    flex-direction: row;
+  }
+}
+
+.home-cards .box-item {
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  width: 220px;
+  margin-bottom: 35px;
+  max-width: 100%;
+}
+
+.home-cards .flip-box {
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+}
+
+.home-cards .flip-box-front,
+.flip-box-back {
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  min-height: 200px;
+  -ms-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+  transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+  -webkit-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+}
+
+.home-cards .flip-box-front {
+  -ms-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-front {
+  -ms-transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-box-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-back {
+  -ms-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-box .inner {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  outline: 1px solid transparent;
+  -webkit-perspective: inherit;
+  perspective: inherit;
+  z-index: 2;
+  
+  transform: translateY(-50%) translateZ(60px) scale(.94);
+  -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
+  -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
+  top: 50%;
+}
+.title {
+  font-size: 16px;
+  font-weight: 200;
+}
+.flip-box-header {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.flip-box p {
+  font-size: 16px;
+  line-height: 1em;
+}
+.flip-box-img{
+  width: 10%;
+}
+
+.flip-box-buttons {
+  display: flex;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 8px 5px;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+/* Adding circle border to the icons */
+.flip-box-buttons a {
+display: block;
+width: 30px;
+height: 30px;
+margin: 0 5px;
+line-height: 30px;
+text-align: center;
+border-radius: 50%;
+background-color: rgba(255, 255, 255, 0.1);
+box-shadow: 0 0 0 1px #fff;
+transition: transform 0.2s ease-in-out;
+text-decoration: none; /* Remove underlines */
+}
+.inner a {
+  display: inline-block;
+  position: relative;
+  color: white; /* Makes the icons white */
+  font-size: 20px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+/* Zooming out on hover */
+.flip-box-buttons a:hover {
+transform: scale(1.2);
+}
+
+
+@media screen and (max-width: 1379px) {
+.box-container {
+  flex-wrap: wrap;
+}
+
+.box-item {
+  width: calc(33.333% - 20px);
+  margin-bottom: 20px;
+}
+}
+
+@media screen and (max-width: 767px) {
+  .home-cards .box-container {
+    padding: 0 2rem;
+    width: 100%;
+  }
+.home-cards .box-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+}
+/*---------------------------------*/
 
 /*---------Animation Items-----------------*/
 @keyframes BottomTotop {
@@ -1406,27 +1605,6 @@ textarea {
     object-fit: cover; 
     object-position: 100% 0;
     padding-bottom: 20px;
-  }
-
-  .custom-shape-divider-bottom-1704482454 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-  }
-  
-  .custom-shape-divider-bottom-1704482454 svg {
-    position: relative;
-    display: block;
-    width: calc(200% + 1.3px);
-    height: 99px;
-  }
-  
-  .custom-shape-divider-bottom-1704482454 .shape-fill {
-    fill: #C2E800;
   }
 }
 
