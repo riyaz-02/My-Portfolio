@@ -326,7 +326,7 @@ strong {
 .home-cards .box-item {
   position: relative;
   -webkit-backface-visibility: hidden;
-  width: 220px;
+  width: 260px;
   margin-bottom: 35px;
   max-width: 100%;
 }
