@@ -198,7 +198,7 @@ strong {
   font-size: 14px;
   line-height: normal;
   overflow: hidden;
-  transition: all 0.4s ease;
+  
 }
 
 .custom-btn:hover {
@@ -1231,6 +1231,11 @@ transform: scale(1.2);
   outline: none;
   border-radius: 5px;
   z-index: 1;
+  transition: all 0.4s ease;
+}
+#achievements .box button:hover{
+  background: #484848;
+  color: #ffffff;
 }
 /*-------------------------------*/
 .modal {
@@ -1379,6 +1384,7 @@ textarea {
 
 
 #contact .form-btn {
+  transition: all 0.4s ease;
   border-radius: 20px;
   border: 1px solid #ffffff;
   background-color: #ffc200;
@@ -1388,7 +1394,6 @@ textarea {
   padding: 12px 45px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  transition: transform 80ms ease-in;
   cursor: pointer;
   margin: auto;
 }
@@ -1402,13 +1407,12 @@ textarea {
   padding: 12px 45px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  transition: transform 80ms ease-in;
   cursor: pointer;
   margin: auto;
 }
 
-#contact button:hover {
-  opacity: 0.7;
+#contact .form-btn:hover {
+  background: #484848;
 }
 
 
@@ -1525,23 +1529,6 @@ textarea {
 @media (max-width: 998px) {
   .full-screen {
     padding-bottom: 4rem;
-  }
-  .custom-shape-divider-top-1704480408 {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow:hidden;
-    line-height: 0;
-  }
-  
-  .custom-shape-divider-top-1704480408 svg {
-    position: relative;
-    display: block;
-    width: calc(450% + 1.3px);
-    height: 900px;
-    transform: rotateY(180deg);
   }
   #home{
     padding-top: 5px;
