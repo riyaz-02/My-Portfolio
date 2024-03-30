@@ -760,9 +760,9 @@
         </div>
         <div class="form">
           <form class="contact-form" onsubmit="sendEmail(); reset(); return false;">
-            <input class="form-controls" id="name" type="text" placeholder="Your Name" data-aos="fade-left">
-            <input class="form-controls" id="email" type="text" placeholder="Your Email" data-aos="fade-left">
-            <input class="form-controls" id="phone" type="text" placeholder="Your Phone" data-aos="fade-left">
+            <input class="form-controls" id="name" type="text" placeholder="Your Name" data-aos="fade-left" required>
+            <input class="form-controls" id="email" type="email" placeholder="Your Email" data-aos="fade-left" required>
+            <input class="form-controls" id="phone" type="text" placeholder="Your Phone" data-aos="fade-left" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');">
             <textarea class="form-controls" id="message" placeholder="Write your message" name="message" id="" cols="30"
               rows="4" data-aos="fade-left"></textarea>
             <div>
