@@ -273,7 +273,6 @@ strong {
 
 .sectionhead span {
   color: #ffc200;
-  text-align: center;
 }
 #home{
   overflow: hidden;
@@ -778,22 +777,22 @@ transform: scale(1.2);
 
 
 .skills .container .col .bar .cpp:before {
-  width: 80%;
+  width: 85%;
   background: #ffc200;
 }
 
-.skills .container .col .bar .html:before {
-  width: 90%;
+.skills .container .col .bar .php:before {
+  width: 95%;
   background: #ffc200;
 }
 
 .skills .container .col .bar .c:before {
-  width: 90%;
+  width: 95%;
   background: #ffc200;
 }
 
-.skills .container .col .bar .content:before {
-  width: 80%;
+.skills .container .col .bar .nextjs:before {
+  width: 70%;
   background: #ffc200;
 }
 
@@ -802,25 +801,22 @@ transform: scale(1.2);
   background: #ffc200;
 }
 
-.skills .container .col .bar .graphics:before {
-  width: 75%;
-  background: #ffc200;
-}
-
-.skills .container .col .bar .msoffice:before {
-  width: 78%;
-  background: #ffc200;
-}
 
 .skills .container .col .bar .project:before {
   width: 85%;
   background: #ffc200;
 }
 
-.skills .container .col .bar .gcp:before {
-  width: 60%;
+.skills .container .col .bar .mysql:before {
+  width: 75%;
   background: #ffc200;
 }
+
+.skills .container .col .bar .mongodb:before {
+  width: 85%;
+  background: #ffc200;
+}
+
 
 /* skills section ends */
 
@@ -883,6 +879,52 @@ transform: scale(1.2);
   color: #ffffff;
   font-size: 15px;
   margin: 0;
+}
+
+#education {
+  position: relative;
+  color: white;
+  padding: 60px 0;
+}
+
+#education::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Add a dark overlay */
+  z-index: 1;
+}
+
+#education .container {
+  position: relative;
+  z-index: 2;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+
+.parallax::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Add a dark overlay */
+    z-index: 1;
+}
+
+.parallax .container {
+    position: relative;
+    z-index: 2;
 }
 
 /*Project Section*/
@@ -1421,109 +1463,108 @@ textarea {
   overflow: hidden;
 }
 .footer {
-  position: relative;
-  min-height: auto;
-  padding-top: auto;
-  background: #000000;
-  justify-content: end;
+    background: #1a1a1a;
+    color: #ffffff;
+    padding: 60px 0;
+    position: relative;
 }
 
-.footer .social {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.footer .note{
-  font-family: "Lucida Handwriting";
-  font-size: 20px;
-  text-align: center;
-  color: #ffffff;
-}
-.footer .note p{
-  margin-bottom: 0;
-  margin-top: 15px;
+.footer-logo img {
+    width: 100px;
+    margin-bottom: 20px;
 }
 
-.footer .social a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  color: white; /* Makes the icons white */
-  height: 50px;
-  width: 50px;
-  padding: 8px;
-  margin-top: 25px;
-  text-align: center;
-  border-radius: 50px;
-  font-size: 30px;
-  transition: transform 0.2s ease-in-out;
-}
-.social a:hover {
-  transform: scale(1.2); /* Zoom in on hover */
+.footer-logo p {
+    font-size: 14px;
+    color: #b9b8b8;
 }
 
-.dark-mode .footer{
-  background: #ffffff;
-}
-.dark-mode .note p,
-.dark-mode .social a{
-  color: #000000;
-}
-
-.footer .credit {
-  position: relative;
-  padding: auto;
-  text-align: center;
-  align-self: center;
-  font-size: 15px;
-  font-weight: 600;
-
-}
-.footer .credit p{
-  margin: 0;
-  padding: 5px 0;
-  color: #ffffff;
+.footer-links h4,
+.footer-contact h4,
+.footer-social h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffc200;
 }
 
-.footer .credit a {
-  color: #ffffff;
-  font-weight: 600;
+.footer-links ul,
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
 }
 
-.dark-mode .footer .credit p,
-.dark-mode .footer .note p{
-  color: #000000;
-}
-.dark-mode .footer .credit a{
-  color: #000000;
+.footer-links ul li,
+.footer-contact ul li {
+    margin-bottom: 10px;
 }
 
-.footer .fa {
-  color: #E90606;
-  margin: 5px;
-  font-size: 15px;
-  animation: pound .35s infinite alternate;
+.footer-links ul li a,
+.footer-contact ul li {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-/*@-webkit-keyframes pound {
-  to {
-    transform: scale(1.1);
-  }
+.footer-links ul li a:hover,
+.footer-contact ul li:hover {
+    color: #ffc200;
 }
 
-@keyframes pound {
-  to {
-    transform: scale(1.1);
-  }
-}*/
+.footer-contact ul li i {
+    margin-right: 10px;
+}
 
+.footer-social .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-social .social-icons a {
+    color: #ffffff;
+    font-size: 24px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+    color: #ffc200;
+    transform: scale(1.2);
+}
+
+.last-updated {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #b9b8b8;
+}
+
+.credit {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.credit a {
+    color: #ffc200;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.credit a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .footer-logo,
+    .footer-links,
+    .footer-contact,
+    .footer-social {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-social .social-icons {
+        justify-content: center;
+    }
+}
 
 /*Body Media*/
 @media (max-width: 998px) {

@@ -55,7 +55,7 @@ function animateLoader(loader, startTime) {
   const loadedHeight = window.innerHeight + window.pageYOffset; // Get the height of the content that has loaded
   const percentage = (loadedHeight / totalHeight) * 100; // Calculate the percentage of the content that has loaded
 
-  if (percentage >= 5) {
+  if (percentage >= 2) {
     loader.style.opacity = '0'; // Set the opacity of the loader to 0 when 90% of the content has loaded
   } else {
     loader.style.opacity = '1'; // Set the opacity of the loader to 1 when less than 90% of the content has loaded
